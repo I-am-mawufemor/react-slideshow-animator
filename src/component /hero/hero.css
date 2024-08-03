@@ -1,0 +1,101 @@
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.bannerHeadline{
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.subtitle{
+    margin-bottom: 30px;
+    font-size: 24px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+.subtitle:first-of-type{
+    animation: showup 7s infinite;
+}
+.subtitle:last-of-type{
+    animation: reveal 7s infinite;
+}
+.subtitle:last-of-type span{
+    display: inline-block;
+    animation: slidein 7s infinite;
+}
+@keyframes showup{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+@keyframes slidein{
+    0%{margin-left: -100%;}
+    20%{margin-left: -100%;}
+    35%{margin-left: 0%;}
+    80%{margin-left: 0%;}
+    100%{margin-left: 0%;}   
+}
+
+@keyframes reveal {
+    0% {opacity: 0; width: 0px;}
+    20%{opacity: 1; width: 0px;}
+    35%{width: 100%;}
+    80%{opacity: 1;}
+    100%{opacity: 0; width: 100%;}
+
+}
+
+.line{
+    width: 300px;
+    height: 4px;
+    background: blue;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.explore-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid blue;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    margin-top: 30px;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.explore-button:hover{
+    color: #fff;
+    background-color: blue;
+}
+.slide-in{
+    animation: slidIn 1s forwards;
+
+}
+.slide-out{
+    animation: slideOut 1s forwards;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
