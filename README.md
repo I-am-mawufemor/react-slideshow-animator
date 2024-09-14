@@ -19,7 +19,7 @@ React Slideshow Animator is a dynamic and interactive web application designed t
 #### Installation and Usage:
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/react-slideshow-animator.git
+   git clone https://github.com/I-am-mawufemor/react-slideshow-animator.git
    ```
 2. **Install Dependencies**:
    ```bash
